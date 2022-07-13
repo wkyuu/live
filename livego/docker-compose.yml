@@ -1,0 +1,13 @@
+version: "2.1"
+services:
+  livego:
+    image: gwuhaolin/livego:latest
+    container_name: livego
+    ports:
+      - 501:7001
+      - 502:7002
+      - 503:1935
+      - 504:8090
+    restart: always
+
+# sudo docker-compose -f docker-compose.yml up -d
